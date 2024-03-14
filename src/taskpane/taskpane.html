@@ -1,0 +1,53 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Validation Example</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <section class="ms-font-m">
+        <p class="ms-font-m">This sample shows how to apply data validation to cells.</p>
+    </section>
+
+    <section class="setup ms-font-m">
+        <h3>Set up</h3>
+        <button id="setup" class="ms-Button">
+            <span class="ms-Button-label">Add table</span>
+        </button>
+        <button id="bind-table-event" class="ms-Button">
+            <span class="ms-Button-label">Bind Table</span>
+        </button>
+    </section>
+
+    <section class="samples ms-font-m">
+        <h3>Try it out</h3>
+        <p class="ms-font-m">Press <b>Require approved name</b> and then click on a cell in the <b>Baby Name</b> column
+            and
+            use the drop down to enter an approved value.</p>
+        <button id="require-approved-name" class="ms-Button">
+            <span class="ms-Button-label">Require approved name</span>
+        </button>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
